@@ -1,0 +1,107 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.quiz-container {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.quiz-container h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.quiz-container h3 {
+  font-size: 22px;
+  color: var(--text-h);
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.options-container button {
+  background: var(--social-bg);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--sans);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.options-container button:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.options-container button:active {
+  transform: scale(0.98) translateX(4px);
+}
+
+.score-container {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.score-title {
+  font-size: 28px;
+  color: var(--text-h);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.score-display {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-bg);
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  margin: 24px auto;
+  border: 2px solid var(--accent-border);
+  box-shadow: 0 8px 16px rgba(170, 59, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-feedback {
+  font-size: 16px;
+  color: var(--text);
+  margin-top: 16px;
+}
