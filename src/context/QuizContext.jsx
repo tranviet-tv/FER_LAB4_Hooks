@@ -20,10 +20,6 @@ export const QuizProvider = ({ children }) => {
   const [isCompleted, setIsCompleted] = useState(false);
   const [score, setScore] = useState(0);
 
-  const addQuestion = (newQuestion) => {
-    setQuizData([...quizData, newQuestion]);
-  };
-
   const handleAnswer = (answer) => {
     const newSelectedAnswers = [...selectedAnswers];
     newSelectedAnswers[currentQuestionIndex] = answer;
@@ -51,7 +47,6 @@ export const QuizProvider = ({ children }) => {
         selectedAnswers,
         isCompleted,
         score,
-        addQuestion,
         handleAnswer,
         nextQuestion,
       }}

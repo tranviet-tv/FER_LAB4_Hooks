@@ -1,5 +1,4 @@
 import { QuizProvider } from './context/QuizContext';
-import QuestionInput from './components/QuestionInput';
 import Quiz from './components/Quiz';
 import './App.css';
 
@@ -10,7 +9,6 @@ function App() {
         <h1>React Hooks Quiz App</h1>
         <div style={{ display: 'flex', gap: '40px', width: '100%', maxWidth: '1100px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Quiz />
-          <QuestionInput />
         </div>
       </div>
     </QuizProvider>
