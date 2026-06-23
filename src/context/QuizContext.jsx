@@ -39,6 +39,17 @@ export const QuizProvider = ({ children }) => {
     }
   };
 
+  const addQuestion = (newQuestion) => {
+    setQuizData([...quizData, newQuestion]);
+  };
+
+  const restartQuiz = () => {
+    setCurrentQuestionIndex(0);
+    setSelectedAnswers([]);
+    setIsCompleted(false);
+    setScore(0);
+  };
+
   return (
     <QuizContext.Provider
       value={{
@@ -49,6 +60,8 @@ export const QuizProvider = ({ children }) => {
         score,
         handleAnswer,
         nextQuestion,
+        addQuestion,
+        restartQuiz,
       }}
     >
       {children}

@@ -105,3 +105,112 @@
   color: var(--text);
   margin-top: 16px;
 }
+
+/* Add Question Form */
+.add-question-container {
+  margin-top: 40px;
+  padding: 24px;
+  background: var(--social-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.add-question-title {
+  margin-bottom: 20px;
+  color: var(--text-h);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.add-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-question-form input {
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 15px;
+  font-family: var(--sans);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.add-question-form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.correct-answer-input {
+  border-color: #10b981 !important;
+}
+
+.correct-answer-input:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+}
+
+.submit-btn {
+  padding: 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  margin-top: 8px;
+  font-family: var(--sans);
+}
+
+.submit-btn:hover {
+  background: #9020e6;
+  transform: translateY(-1px);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.restart-btn {
+  margin-top: 24px;
+  padding: 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-family: var(--sans);
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+.restart-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.restart-btn:active {
+  transform: scale(0.98);
+}
